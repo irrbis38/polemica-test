@@ -147,7 +147,33 @@ template {
   display: none
 }
 :root {
-  --color-black: #000
+  --color-text-main: #fff;
+  --color-bg-black: #000;
+  --color-bg-green: #d7fe39;
+  --color-bg-blue: #3fa9f5;
+  --font-family: "Inter",sans-serif;
+  --second-family: "Craftwork Grotesk",sans-serif
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/inter-v18-cyrillic_latin-regular.woff2) format("woff2"),url(../fonts/inter-v18-cyrillic_latin-regular.ttf) format("truetype")
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  src: url(../fonts/inter-v18-cyrillic_latin-500.woff2) format("woff2"),url(../fonts/inter-v18-cyrillic_latin-500.ttf) format("truetype")
+}
+@font-face {
+  font-family: "Craftwork Grotesk";
+  src: url(../fonts/CraftworkGrotesk-Bold.woff2) format("woff2"),url(../fonts/CraftworkGrotesk-Bold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap
 }
 *,
 ::after,
@@ -172,6 +198,9 @@ body {
   flex-direction: column;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: var(--color-text-main,#fff);
+  background-color: var(--color-bg-black,#000);
+  font-family: var(--font-family, "Inter", sans-serif);
   font-weight: 400
 }
 body.lock {

@@ -13,48 +13,50 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    // min-height: 0.001vw; // — Fixes Safari bug with viewport units in calc()
+  box-sizing: border-box;
+  // min-height: 0.001vw; // — Fixes Safari bug with viewport units in calc()
 }
 
 html {
-    min-width: 320px;
-    scrollbar-gutter: stable;
-    scroll-behavior: smooth;
+  min-width: 320px;
+  scrollbar-gutter: stable;
+  scroll-behavior: smooth;
 }
 
 body {
-    width: 100%;
-    height: 100%;
-    min-height: 100vh;
-    min-width: 320px;
-    display: flex;
-    flex-direction: column;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    // TODO: set color, bg-color, font-family
-    font-weight: 400;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--color-text-main, #fff);
+  background-color: var(--color-bg-black, #000);
+  font-family: var(--font-family, "Inter", sans-serif);
+  font-weight: 400;
 }
 
 body.lock {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .container {
-    width: 100%;
-    max-width: 1512px;
-    margin: 0 auto;
-    padding: 0 36px;
+  width: 100%;
+  max-width: 1512px;
+  margin: 0 auto;
+  padding: 0 36px;
 
-    @include xs {
-        padding: 0 16px;
-    }
+  @include xs {
+    padding: 0 16px;
+  }
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
-    outline: none;
+  color: inherit;
+  text-decoration: none;
+  outline: none;
 }
 
 html,
@@ -69,29 +71,29 @@ p,
 ol,
 ul,
 li {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
 }
 
 ol,
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 button,
 input {
-    padding: 0;
-    font-family: inherit;
-    font-size: inherit;
-    border: none;
-    border-radius: 0;
-    appearance: none;
-    outline: none;
-    color: inherit;
-    background-color: transparent;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  border-radius: 0;
+  appearance: none;
+  outline: none;
+  color: inherit;
+  background-color: transparent;
 }
 
 @import "./general";
