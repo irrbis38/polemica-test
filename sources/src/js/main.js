@@ -58,7 +58,9 @@ const initHeader = (header) => {
     };
 
     // reset init transition
-    window.inner < 991 ? resetTransitionDesktop() : resetTransitionMobile();
+    window.innerWidth < 991
+        ? resetTransitionDesktop()
+        : resetTransitionMobile();
 
     // reset transition on window resize
     const mq = window.matchMedia("(max-width: 991px)");
