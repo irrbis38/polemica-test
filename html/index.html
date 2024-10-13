@@ -30,7 +30,7 @@
           <ul class="header__menu"> 
             <li class="header__item"><a class="header__link" href="#">Играть</a></li>
             <li class="header__item"><a class="header__link" href="#">Правила</a></li>
-            <li class="header__item"><a class="header__link header__link--amount" href="#">Блог <span>3</span></a></li>
+            <li class="header__item"><a class="header__link link--amount" href="#">Блог <span>3</span></a></li>
             <li class="header__item"> <a class="header__link" href="#">Топ игроков</a></li>
             <li class="header__item"><a class="header__link" href="#">Сообщества</a></li>
             <li class="header__item"><a class="header__link header__link--gradient" href="#">Подписка</a></li>
@@ -112,7 +112,61 @@
         </div>
       </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="container"> 
+        <div class="footer__top">
+          <div class="footer__descr">
+            <p class="footer__text">Мафия — отличный способ провести время, померяться интеллектом и найти друзей 
+              <picture class="picture object-fit-cover">
+                <source class="object-fit-cover" srcset="images/emoji.webp, images/emoji@2x.webp 2x" type="image/webp"/><img class="picture__img object-fit-cover" src="images/emoji.png" srcset="images/emoji.png, images/emoji@2x.png 2x" alt="" width="36" height="36" decoding="async" loading="lazy"/>
+              </picture>
+            </p>
+            <button class="footer__play" type="button" aria-label="Начать играть в Мафию">Играть бесплатно</button>
+          </div>
+          <div class="footer__links">
+            <ul class="footer__links-block">
+              <li class="footer__links-item"><a class="footer__links-link" href="#">Найти игру</a></li>
+              <li class="footer__links-item"><a class="footer__links-link" href="#">Топ игроков</a></li>
+              <li class="footer__links-item"><a class="footer__links-link" href="#">Подписка</a></li>
+              <li class="footer__links-item"><a class="footer__links-link" href="#">Промокоды</a></li>
+              <li class="footer__links-item"><a class="footer__links-link link--amount" href="#">Блог <span>3</span></a></li>
+            </ul>
+            <ul class="footer__links-block">
+              <li class="footer__links-item"><a class="footer__links-link" href="#">Правила</a></li>
+              <li class="footer__links-item"><a class="footer__links-link" href="#">Роли</a></li>
+              <li class="footer__links-item"><a class="footer__links-link" href="#">Сообщества</a></li>
+              <li class="footer__links-item"><a class="footer__links-link" href="#">Трансляции</a></li>
+              <li class="footer__links-item"><a class="footer__links-link" href="#">Академия</a></li>
+            </ul>
+            <ul class="footer__links-block">
+              <li class="footer__links-item"><a class="footer__links-link link-arrow" href="#">Поддержка</a></li>
+              <li class="footer__links-item"><a class="footer__links-link link-soon" href="#">Рандомайзер</a></li>
+              <li class="footer__links-item"><a class="footer__links-link link-soon" href="#">Магазин</a></li>
+            </ul>
+            <ul class="footer__links-block">
+              <li class="footer__links-item"><a class="footer__links-link" href="#">Instagram</a></li>
+              <li class="footer__links-item"><a class="footer__links-link" href="#">Twitch</a></li>
+              <li class="footer__links-item"><a class="footer__links-link" href="#">VK</a></li>
+              <li class="footer__links-item"><a class="footer__links-link" href="#">Youtube</a></li>
+              <li class="footer__links-item"><a class="footer__links-link" href="#">Telegram</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom"> 
+          <div class="footer__logo"><img src="./images/logo-footer.svg" alt="" loading="lazy" decoding="async" width="95" height="24"></div>
+          <div class="footer__info">
+            <div class="footer__lang">
+              <button class="footer__lang-btn" type="button" aria-label="Изменить язык интерфеса">RU</button>
+              <div class="footer__lang-dropdown">
+                <button class="footer__lang-switch" type="button" aria-label="Выбрать русский язык">RU</button>
+                <button class="footer__lang-switch" type="button" aria-label="Выбрать английский язык">EN</button>
+                <button class="footer__lang-switch" type="button" aria-label="Выбрать испанский язык">ES</button>
+              </div>
+            </div><a class="footer__info-link" href="#">Конфиденциальность</a><a class="footer__info-link" href="#">Оферта</a><a class="footer__info-link" href="#">Карта сайта</a><a class="footer__info-link" href="#">© Polemica Games, 2024</a>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="js/main.min.js"></script>
   </body>
 </html>

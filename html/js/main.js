@@ -79,8 +79,39 @@ const initHeader = (header) => {
     });
 };
 
+const initSwitchLang = (container) => {
+    const show_btn = container.querySelector(".footer__lang-btn");
+    const dropdown = container.querySelector(".footer__lang-dropdown");
+    const switch_btns = container.querySelectorAll(".footer__lang-switch");
+
+    if (!show_btn || !dropdown || switch_btns.length < 1) return;
+
+    show_btn.addEventListener("click", () => {
+        container.classList.toggle("active");
+    });
+
+    switch_btns.forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+            show_btn.textContent = e.target.closest(
+                ".footer__lang-switch"
+            ).textContent;
+            container.classList.remove("active");
+        });
+    });
+
+    window.addEventListener("click", (e) => {
+        if (!container.contains(e.target)) {
+            container.classList.remove("active");
+        }
+    });
+};
+
 document.addEventListener("DOMContentLoaded", () => {
     // init header
     const header = document.querySelector(".header");
     header && initHeader(header);
+
+    // init switch lang
+    const lang = document.querySelector(".footer__lang");
+    lang && initSwitchLang(lang);
 });

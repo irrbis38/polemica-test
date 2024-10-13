@@ -157,22 +157,6 @@
     @include menu-link();
 }
 
-.header__link--amount {
-    span {
-        display: inline-block;
-        min-width: 18px;
-        min-height: 18px;
-        margin-left: 6px;
-        padding: 1px 3px;
-        font-size: 14px;
-        letter-spacing: -0.01em;
-        text-align: center;
-        color: var(--color-text-black, #000);
-        background-color: var(--color-bg-green, #d7fe39);
-        border-radius: 6px;
-    }
-}
-
 .header__link--gradient {
     background: linear-gradient(90deg, #d7fe39 0%, #55fe39 100%);
     background-clip: text;
